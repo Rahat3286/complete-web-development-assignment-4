@@ -6,12 +6,16 @@
     list-style-type: none;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'calibri';
     background:url("images/bg.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
+}
+
+a{
+    text-decoration: none;
 }
 
 nav{
@@ -34,9 +38,15 @@ nav ul li a{
     padding: 10px;
     text-transform: uppercase;
 }
+nav ul li a:hover{
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
 nav ul li a:hover, a.active{
-    background-color: #3352F2;
+    background-color: #c43023;
     border-radius: 5px;
+    transition: all ease 0.6s;
 }
 .main-content{
     display: grid;
@@ -57,21 +67,24 @@ nav ul li a:hover, a.active{
 .booking-form  .input-group{
     margin: 10px 0;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .f-class{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.inp-width{
-    min-width: 300px;
+.e-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.plus-minus-btn{
-    color: #3352F2;
-    font-size: 30px;
-    padding: 2px;
-    margin-top: 10px;
-    word-spacing: 20px;
-}
+
+
 .booking-form  .calculations{
     margin: 10px 0;
 }
@@ -112,11 +125,16 @@ nav ul li a:hover, a.active{
     padding: 10px;
     border-radius: 5px;
     border: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: 500;
-    background-color:  #3352F2;
+    background-color:  #27609a;
+}
+.btn-style:hover{
+    background-color: #1e86ba;
+    transition: ease 0.5s;
 }
 .amount{
     display: flex;
     justify-content: space-between;
 }
+
