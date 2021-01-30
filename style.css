@@ -13,7 +13,6 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-
 a{
     text-decoration: none;
 }
@@ -84,7 +83,6 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
-
 .booking-form  .calculations{
     margin: 10px 0;
 }
@@ -129,6 +127,9 @@ input::-webkit-inner-spin-button {
     font-weight: 500;
     background-color:  #27609a;
 }
+.plus-minus-button{
+    padding-top: 12px;
+}
 .btn-style:hover{
     background-color: #1e86ba;
     transition: ease 0.5s;
@@ -137,4 +138,5 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
 }
+
 

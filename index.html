@@ -60,7 +60,7 @@
                 <div class="col-md-8">
                     <input id="FirstClassTicket-count" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 plus-minus-button">
                     <button onclick="handleTicketChange('FirstClassTicket', true)" class="btn btn-success">+</button>
                     <button onclick="handleTicketChange('FirstClassTicket', false)" class="btn btn-danger">-</button>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="col-md-8">
                     <input id="economyClassTicket-count" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 plus-minus-button">
                     <button onclick="handleTicketChange('economyClassTicket', true)" class="btn btn-success">+</button>
                     <button onclick="handleTicketChange('economyClassTicket', false)" class="btn btn-danger">-</button>
                 </div>
@@ -155,10 +155,10 @@
 
                 const totalPrice = FirstClassTicketCount * 150 + economyClassTicketCount * 100;
                 document.getElementById("total-price").innerText = totalPrice;
-
+                // -------------- tax -----------------
                 const tax = Math.round(totalPrice * 0.1);
                 document.getElementById("tax-amount").innerText = tax;
-
+                // ---------- grand_Total --------------
                 const grandTotal = totalPrice + tax;
                 document.getElementById("grand-total").innerText = grandTotal;
             }
@@ -167,6 +167,7 @@
                 const ticketCount = parseInt(ticketInput.value);
                 return ticketCount;
             }
+            //--------------- popup_messege --------------------
             function popUp() {
                 swal("You have successfully purchased your tickets", "Have a safe journey", "success");
             }
